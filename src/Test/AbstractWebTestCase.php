@@ -15,7 +15,7 @@ abstract class AbstractWebTestCase extends WebTestCase
     /**
      * @var Client
      */
-    protected $client;
+    protected static $client;
 
     /**
      * The list with table name prefixes that should be ignored during truncating.
@@ -29,15 +29,15 @@ abstract class AbstractWebTestCase extends WebTestCase
     /**
      * Creates a client for testing the controller routes.
      */
-    protected function setUp()
+    protected function setUp(): void
     {
-        $this->client = static::createClient();
+        static::$client = static::createClient();
     }
 
     /**
      * Empties the database.
      */
-    protected function tearDown()
+    protected function tearDown(): void
     {
         $entityManager = static::$container->get('doctrine')->getManager();
         $entityManager->clear();
