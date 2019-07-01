@@ -44,7 +44,7 @@ class UuidParamConverterTest extends TestCase
     }
 
     /**
-     * Tests if an valid uuid is created from an valid string.
+     * Test if an valid uuid is created from an valid string.
      */
     public function testApply()
     {
@@ -58,7 +58,7 @@ class UuidParamConverterTest extends TestCase
     }
 
     /**
-     * Tests if UuidParamConverter::apply returns false when the parameter is optional and not set.
+     * Test if UuidParamConverter::apply returns false when the parameter is optional and not set.
      */
     public function testApplyOptionalWithoutAttribute()
     {
@@ -72,7 +72,7 @@ class UuidParamConverterTest extends TestCase
     }
 
     /**
-     * Tests if an valid uuid is created from an invalid string.
+     * Test if an valid uuid is created from an invalid string.
      */
     public function testApplyWithAnInvalidUuid()
     {
@@ -86,7 +86,7 @@ class UuidParamConverterTest extends TestCase
     }
 
     /**
-     * Tests if the generated configuration gets supported with an valid name.
+     * Test if the generated configuration gets supported with an valid name.
      */
     public function testSupports()
     {
@@ -97,7 +97,7 @@ class UuidParamConverterTest extends TestCase
     }
 
     /**
-     * Tests if the configuration is not supported with an invalid uuid.
+     * Test if the configuration is not supported with an invalid uuid.
      */
     public function testSupportWithAnInvalidClass()
     {

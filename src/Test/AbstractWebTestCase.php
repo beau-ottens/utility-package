@@ -1,6 +1,6 @@
 <?php
 
-namespace SuperBrave\UtilityPackage\Tests;
+namespace SuperBrave\UtilityPackage\Test;
 
 use Doctrine\DBAL\Connection;
 use PDO;
