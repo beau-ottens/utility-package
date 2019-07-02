@@ -22,7 +22,7 @@ abstract class AbstractWebTestCase extends WebTestCase
      *
      * @var array
      */
-    private $ignoredTableNamePrefixes = array(
+    protected $ignoredTableNamePrefixes = array(
         'migration_versions',
     );
 
